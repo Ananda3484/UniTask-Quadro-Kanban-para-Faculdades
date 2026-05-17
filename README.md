@@ -1,23 +1,39 @@
-# UniTask-Quadro-Kanban-para-Faculdades
-Projeto desenvolvido para a disciplina de Estrutura de Dados com base no levantamento de requisitos funcionais e não funcionais de um sistema Kanban. O objetivo é organizar tarefas através de quadros, colunas e cards, aplicando conceitos de abstração de dados, modelagem e organização de sistemas.
+Sistema Kanban para Gestão de Atividades Acadêmicas
 
-O sistema tem como objetivo organizar atividades de forma visual e prática, utilizando quadros, colunas e tarefas para acompanhar o andamento das demandas.
+Projeto desenvolvido para a disciplina de Estrutura de Dados com foco na organização de tarefas acadêmicas através da metodologia Kanban.
 
-Durante o desenvolvimento do projeto foram aplicados conceitos de:
+O sistema foi criado a partir do levantamento de requisitos funcionais e não funcionais, simulando uma plataforma acadêmica para gerenciamento de atividades, demandas e fluxo de tarefas.
 
-Levantamento de requisitos
-Modelagem de sistema
-Abstração de dados
-Organização de estruturas
-Análise funcional do sistema
-
-Funcionalidades previstas:
-
+Funcionalidades
 Cadastro de usuários
-Criação de quadros
+Criação de quadros Kanban
 Gerenciamento de colunas
-Cadastro e movimentação de tarefas
-Controle de prioridades e status
-Organização do fluxo de atividades
+Criação e movimentação de tarefas
+Organização de atividades acadêmicas
+Controle visual do andamento das tarefas
+Tecnologias Utilizadas
+HTML5
+CSS3
+JavaScript
+Firebase (Banco de Dados e autenticação)
+Objetivo do Projeto
 
-O projeto busca simular o funcionamento de uma plataforma real de gerenciamento de tarefas, aplicando conceitos acadêmicos de análise e estruturação de sistemas.
+Aplicar conceitos de:
+
+Estrutura de Dados
+Abstração de dados
+Modelagem de sistemas
+Organização de informações
+Levantamento de requisitos
+Desenvolvimento web
+Estrutura do Sistema
+
+O sistema é baseado no modelo Kanban, dividido em:
+
+Quadros
+Colunas
+Cards/Tarefas
+
+Permitindo acompanhar o fluxo das atividades de forma visual e organizada.
+
+desenvolvido por Ananda dos Santos.
