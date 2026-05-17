@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sair - PsyKanban</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="login-page">
+    <div class="bg-effect"></div>
+
+    <main class="login-container">
+      <div class="login-card">
+        <h1>Deseja sair?</h1>
+
+        <p>Você pode apenas encerrar a sessão ou inativar sua conta.</p>
+
+        <button onclick="encerrarSessao()" class="primary-btn">
+          Somente Sair
+        </button>
+
+        <button onclick="inativarConta()" class="danger-btn">
+          Inativar Conta
+        </button>
+
+        <button onclick="voltarSistema()" class="secondary-btn">Voltar</button>
+      </div>
+    </main>
+
+    <script type="module" src="sair.js"></script>
+  </body>
+</html>

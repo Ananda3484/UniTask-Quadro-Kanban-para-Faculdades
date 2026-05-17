@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "psykanban",
+    "firebase use": "kanban-psicologia"
+  },
+  "targets": {},
+  "etags": {}
+}

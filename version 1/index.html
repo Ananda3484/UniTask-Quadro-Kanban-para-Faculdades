@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PsyKanban 💜</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="login-page">
+    <div class="bg-effect"></div>
+
+    <main class="login-container">
+      <div class="login-card">
+        <h1>PsyKanban 💜</h1>
+
+        <p>Organize sua rotina acadêmica sem enlouquecer.</p>
+
+        <input type="email" id="email" placeholder="Digite seu e-mail" />
+
+        <input type="password" id="senha" placeholder="Digite sua senha" />
+
+        <button onclick="login()" class="primary-btn">Entrar</button>
+
+        <button
+          onclick="window.location.href = 'cadastro.html'"
+          class="secondary-btn"
+        >
+          Criar Conta
+        </button>
+      </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PsyKanban 💜</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- DRAG AND DROP -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+  </head>
+
+  <body>
+    <!-- TOPO -->
+    <header class="topbar">
+      <div>
+        <h1>PsyKanban 💜</h1>
+
+        <p>Sistema acadêmico Kanban</p>
+      </div>
+
+      <div class="topbar-right">
+        <!-- PESQUISA -->
+        <input type="text" id="pesquisa" placeholder="Pesquisar tarefas..." />
+
+        <!-- USUÁRIO -->
+        <div class="user-box">
+          <span id="usuario"></span>
+
+          <button onclick="sair()">Sair</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- DASHBOARD -->
+    <main class="dashboard">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <!-- PRÓXIMAS ENTREGAS -->
+        <div class="calendar-box">
+          <h2>📅 Próximas Entregas</h2>
+
+          <div id="proximasEntregas">
+            <p class="sem-entregas">Nenhuma tarefa próxima.</p>
+          </div>
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div class="task-form">
+          <h2>Nova Tarefa</h2>
+
+          <input type="text" id="titulo" placeholder="Título" />
+
+          <textarea id="descricao" placeholder="Descrição"></textarea>
+
+          <input type="date" id="data" />
+
+          <input type="text" id="materia" placeholder="Matéria" />
+
+          <select id="prioridade">
+            <option>Baixa</option>
+
+            <option>Média</option>
+
+            <option>Alta</option>
+          </select>
+
+          <button onclick="criarTarefa()">Adicionar Tarefa</button>
+        </div>
+      </aside>
+
+      <!-- KANBAN -->
+      <section class="kanban">
+        <!-- A FAZER -->
+        <div class="column">
+          <div class="column-title">
+            <h2>A Fazer</h2>
+
+            <span>📚</span>
+          </div>
+
+          <div class="task-list" id="afazer"></div>
+        </div>
+
+        <!-- EM ANDAMENTO -->
+        <div class="column">
+          <div class="column-title">
+            <h2>Em Andamento</h2>
+
+            <span>🧠</span>
+          </div>
+
+          <div class="task-list" id="andamento"></div>
+        </div>
+
+        <!-- CONCLUÍDO -->
+        <div class="column">
+          <div class="column-title">
+            <h2>Concluído</h2>
+
+            <span>✅</span>
+          </div>
+
+          <div class="task-list" id="concluido"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- JS -->
+    <script type="module" src="kanban.js"></script>
+  </body>
+</html>
